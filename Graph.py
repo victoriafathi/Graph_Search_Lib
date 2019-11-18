@@ -39,8 +39,6 @@ def add_edge(g, n1, n2, attributes = None, n1_attributes = None, n2_attributes =
 		g['edges'][n1][n2] = attributes
 		if not g['directed']:
 			g['edges'][n2][n1] = g['edges'][n1][n2] # share the same attributes as n1->n2
-		else:
-			g['in_edges'][n2][n1] = g['edges'][n1][n2] # share the same attributes as n1->n2 (for directed graphs and GO project)
 		g['nb_edges'] += 1
 	return g['edges'][n1][n2] # return edge attributes
 
