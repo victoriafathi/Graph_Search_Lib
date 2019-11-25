@@ -59,6 +59,32 @@ def load_SIF(filename, directed=True): # TP1
 			row = f.readline().rstrip() # read next line
 	return g # return created graph
 
+def load_TAB(filename, directed=True, weighted=False, weight_attribute=None): # TP3
+	"""
+	parse a TAB file (as cytoscape format) and returns a graph.
+	
+	line syntax: id1	id2	att1	att2	att3	...
+	"""
+	g = create_graph(directed, weighted)
+	with open(filename) as f: 
+		# GET COLUMNS NAMES
+		tmp = f.readline().rstrip()
+		attNames= tmp.split('\t')
+		# REMOVES FIRST TWO COLUMNS WHICH CORRESPONDS TO THE LABELS OF THE CONNECTED VERTICES
+		attNames.pop(0)
+		attNames.pop(0)
+		# PROCESS THE REMAINING LINES
+		row = f.readline().rstrip()
+		while row:
+			vals = row.split('\t')
+			u = vals.pop(0)
+			v = vals.pop(0)
+			att = {}
+			for i in range(len(attNames)):
+				att[ attNames[i] ] = vals[i]
+			add_edge(g, u, v, att)
+			row = f.readline().rstrip() # NEXT LINE
+		return g
 
 ##### main / #####
 if __name__ == "__main__":
