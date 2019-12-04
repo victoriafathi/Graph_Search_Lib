@@ -202,7 +202,7 @@ if __name__ == "__main__":
 		csvreader = csv.reader(f, delimiter='\t')
 		fields = next(csvreader)
 		for row in csvreader:
-			leaves.append( { 'proteomeID': row[0], 'tax_id': row[1], 'species': row[2], 'lineage': row[3], 'description': row[4], 'size': row[5] })
+			leaves.append( { 'proteomeID': row[0], 'tax_id': row[1], 'species': row[2] })
 			leaves_ids.append( row[1] )
 	# ~ pprint(leaves)
 
