@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 
 from pprint import pprint
-import re
+import re                 # to parse names.dmp
 import Graph as gr
-import resource
-import csv
-from copy import deepcopy
+import resource           # for memory usage monitoring
+import csv                # could use pandas but too long/complex here
+from copy import deepcopy # copy node attributes during pruning
 
 def create_tree(directed = True, weighted = False):
 	"""
@@ -56,9 +56,15 @@ def load_tree_csv(filename, id_col = 0, parent_col = 1, sep='\t', header=False):
 	return t
 
 def parent(g, n):
+    """
+    get parent node id
+    """
 	return g['nodes'][n]['parent']
 
 def children(g, n):
+    """
+    get list of children ids
+    """
 	if n in g['edges']:
 		return list(g['edges'][n])
 	else:
@@ -111,6 +117,9 @@ def load_ncbi_node_names(filename, g):
 	return g
 
 def prune(g, leaves, root=None):
+    """
+    only keep branches from provided leaves to root or provided none
+    """
 	# init
 	if root is None:
 		root = g['root']
