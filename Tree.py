@@ -181,10 +181,10 @@ if __name__ == "__main__":
 	ncbi_names = "taxdump/names.dmp"
 	print("Loading node attributes '%s'" % (ncbi_names))
 	load_ncbi_node_names(ncbi_names, t)
-	print("Tree depth: %s, nb leaves: %s" % (depth(t), nb_leaves(t)))
+	print("Tree height: %s, nb leaves: %s" % (height(t), nb_leaves(t)))
 
 	firmicutes_id = '1239'
-	print("Subtree from Firmicutes (%s) depth: %s, nb_leaves: %s" % (firmicutes_id, depth(t, firmicutes_id), nb_leaves(t, firmicutes_id) ))
+	print("Subtree from Firmicutes (%s) height: %s, nb_leaves: %s" % (firmicutes_id, height(t, firmicutes_id), nb_leaves(t, firmicutes_id) ))
 	leaves_selection = "firmicutes.selection.tsv"
 	print("Loading a selection of taxa '%s'" % (leaves_selection))
 	leaves = []
