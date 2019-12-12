@@ -123,3 +123,39 @@ def load_GOA(go, filename):
 				else: # go_id or alt_id not found in GOTerms
 					print('Error: could not attach a gene product (%s) to non existing GO Term (%s)' % (id, go_id))
 			line = f.readline()
+
+
+def max_depth(go, node):
+	"""
+	go graph traversal to find the longest path length from node (GOTerm) to a leaf (node with no successor)
+	
+	Returns the length of the longest path
+	"""
+	return ['unimplemented yet']
+
+def GOTerms(go, gp, all=True, evidence_code=None):
+	"""
+	return the GOTerms associated to the provided gene product (gp)
+	
+	go: Gene Ontology graph
+	gp: gene product
+	all: if True, all the GOTerms and their ancestors will be return, otherwise only the GOTerms directly associated to the gene product will be returned.
+	evidence_code: ignored for the moment
+	
+	Returns a list of GOTerms identifiers, e.g. ['GO:0005215','GO:0005515','GO:0006810','GO:0006974','GO:0008643']
+	"""
+	return ['unimplemented yet']
+
+def GeneProducts(go, term, all=True, evidence_code=None):
+	"""
+	return the gene products anotated by the provided GOTerm
+	
+	go: Gene Ontology graph
+	term: GOTerm id
+	all: if True, all the gene products directly and undirectly annotated (linked to a descendant of GOTerm) will be return, otherwise only the gene products directly associated to the GOTerm will be returned.
+	evidence_code: ignored for the moment
+
+	Returns a list of gene products identifiers, e.g. ['P0AAG5', 'P0AFY6', 'P10907', 'P16676', 'P23886']
+	"""
+	return ['unimplemented yet']
+
