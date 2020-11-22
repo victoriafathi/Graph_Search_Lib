@@ -1,3 +1,4 @@
 # Graph
 
-Graph library in python by Vic et Manu
+Graph library in python by Victoria
+
