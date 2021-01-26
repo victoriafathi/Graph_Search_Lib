@@ -1,0 +1,3 @@
+!gaf-version: 2.1
+!GO-version: http://purl.obolibrary.org/obo/go/releases/2017-11-18/extensions/go-plus.owl
+UniProtKB	M9NDU8	Dmel\CG32174		GO:0005739	GO_REF:0000038	IEA	UniProtKB-KW:KW-0496	C	Ubiquinone biosynthesis protein COQ4 homolog, mitochondrial	M9NDU8_DROME|Dmel\CG32174|CG3877|CG32174|Dmel_CG32174	protein	taxon:7227	20171118	UniProt		

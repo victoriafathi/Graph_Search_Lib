@@ -1,0 +1,7 @@
+socks	before	shoes
+trousers	before	shoes
+shirt	before	tie	belt
+tie	before	jacket
+belt	before	jacket
+trousers	before	belt
+underwear	before	shoes	trousers

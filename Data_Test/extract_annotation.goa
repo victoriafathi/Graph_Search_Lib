@@ -1,0 +1,8 @@
+!gaf-version: 2.1
+!GO-version: http://purl.obolibrary.org/obo/go/releases/2017-11-18/extensions/go-plus.owl
+UniProtKB	Q7JXB9	EndoG		GO:0000001	PMID:22421049	IMP		P	Endonuclease G	Q7JXB9_DROME|EndoG|CG8862|Dmel_CG8862	protein	taxon:7227	20120426	FlyBase		
+UniProtKB	P54622	mtSSB		GO:0000002	PMID:11294889	IDA		P	Single-stranded DNA-binding protein, mitochondrial	SSBP_DROME|mtSSB|lopo|CG4337	protein	taxon:7227	20030722	UniProt		
+UniProtKB	P54622	mtSSB		GO:0000002	PMID:11294889	IMP		P	Single-stranded DNA-binding protein, mitochondrial	SSBP_DROME|mtSSB|lopo|CG4337	protein	taxon:7227	20060803	FlyBase		
+UniProtKB	Q9VLS5	Rbsn-5		GO:0000011	GO_REF:0000033	IBA	PANTHER:PTN001004537	P	LD29542p	Q9VLS5_DROME|Rbsn-5|Dmel\CG8506|EEA1|MENE (2L)-C|MENE(2L)-C|Rbsn|Rbsn5|rbsn|rbsn-5|CG8506|Dmel_CG8506	protein	taxon:7227	20141212	GO_Central		
+UniProtKB	E1JHR5	Eno		GO:0000015	GO_REF:0000002	IEA	InterPro:IPR000941	C	Enolase, isoform F	E1JHR5_DROME|Eno|BEST:LD15491|CT32526|Dmel\CG17654|ENOA|Eno2|T18|anon-WO0153538.76|eno|CG17654|Dmel_CG17654	protein	taxon:7227	20171118	InterPro		
+UniProtKB	Q9VH78	CG8412		GO:0000009	GO_REF:0000024	ISS	UniProtKB:P53730	F	Probable Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransferase	ALG12_DROME|CG8412	protein	taxon:7227	20040428	UniProt		
